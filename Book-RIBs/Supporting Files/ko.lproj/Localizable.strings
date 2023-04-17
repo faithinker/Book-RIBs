@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Book-RIBs
+
+  Created by jhkim on 2023/04/17.
+  
+*/
+
+// MARK: - TabBar Title
+
+"tabBarTitle.new" = "New Books";
+"tabBarTitle.search" = "Search Books";
+
+"tabBar" = "List";

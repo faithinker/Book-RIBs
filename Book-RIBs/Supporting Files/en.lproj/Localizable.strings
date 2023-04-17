@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Book-RIBs
+
+  Created by jhkim on 2023/04/17.
+  
+*/
+
+// MARK: - TabBar Title
+
+"tabBarTitle" = "New";
+"tabBar" = "List";
