@@ -11,7 +11,7 @@ import RxSwift
 import SnapKit
 import Then
 
-class NewTableCell: UITableViewCell {
+class NewCell: UITableViewCell {
     
     private lazy var newImageView = UIImageView()
     

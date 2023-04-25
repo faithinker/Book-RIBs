@@ -26,7 +26,7 @@ final class NewViewController: UIViewController, NewPresentable, NewViewControll
     
     private lazy var newTableView = UITableView().then {
         $0.separatorStyle = .none
-        //$0.register(NewTableCell.self, forCellReuseIdentifier: "NewTableCell")
+        $0.register(NewCell.self, forCellReuseIdentifier: "NewCell")
         $0.rowHeight = 280
         $0.flashScrollIndicators()
     }
