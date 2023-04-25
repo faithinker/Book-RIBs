@@ -17,6 +17,8 @@ protocol TabBarViewControllable: ViewControllable {
     func makeTabBar(_ vc: UIViewController, title: String, image: String, tag: Int) -> UIViewController
     
     func setViewControllers(viewControllers: [ViewControllable])
+    
+    func setTabBar()
 }
 
 final class TabBarRouter: ViewableRouter<TabBarInteractable, TabBarViewControllable>, TabBarRouting {
@@ -51,6 +53,7 @@ final class TabBarRouter: ViewableRouter<TabBarInteractable, TabBarViewControlla
         self.new = new
         self.search = search
         viewController.setViewControllers(viewControllers: [new.viewControllable, search.viewControllable])
+        viewController.setTabBar()
     }
     
 }

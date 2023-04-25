@@ -8,5 +8,5 @@
 
 // MARK: - TabBar Title
 
-"tabBarTitle" = "New";
-"tabBar" = "List";
+"tabBarTitle.new" = "New Books";
+"tabBarTitle.search" = "Search Books";

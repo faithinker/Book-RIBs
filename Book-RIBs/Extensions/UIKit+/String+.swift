@@ -26,7 +26,7 @@ extension String {
     /// - waring: 해당되는 키가 없을 경우, 넣은 키 자체가 return 됨
     func localized(_ arguments: CVarArg...) -> String {
         if let langBundle = String.LangBundle {
-            let str = NSLocalizedString(self, tableName: "Localuzable", bundle: langBundle ,comment: "")
+            let str = NSLocalizedString(self, tableName: "Localizable", bundle: langBundle ,comment: "")
             return String(format: str, arguments: arguments)
         } else {
             if let localeID = Locale.preferredLanguages.first,

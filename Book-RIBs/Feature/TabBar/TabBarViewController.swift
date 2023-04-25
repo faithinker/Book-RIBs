@@ -18,6 +18,14 @@ protocol TabBarPresentableListener: AnyObject {
 
 final class TabBarViewController: UITabBarController, TabBarPresentable, TabBarViewControllable {
     
+    weak var listener: TabBarPresentableListener?
+    
+    func setViewControllers(viewControllers: [ViewControllable]) {
+        let newViewController = makeTabBar(viewControllers[0].uiviewController, title: "New", image: "book", tag: 0)
+        let searchViewController = makeTabBar(viewControllers[1].uiviewController, title: "Search", image: "magnifyingglass", tag: 1)
+        
+        self.viewControllers = [newViewController, searchViewController]
+    }
     
     func makeTabBar(_ vc: UIViewController, title: String, image: String, tag: Int) -> UIViewController {
         let viewController = UINavigationController(rootViewController: vc)
@@ -31,13 +39,8 @@ final class TabBarViewController: UITabBarController, TabBarPresentable, TabBarV
         return viewController
     }
     
-    func setViewControllers(viewControllers: [ViewControllable]) {
-        let newViewController = makeTabBar(viewControllers[0].uiviewController, title: "New", image: "book", tag: 0)
-        let searchViewController = makeTabBar(viewControllers[1].uiviewController, title: "Search", image: "magnifyingglass", tag: 1)
-        
-        self.viewControllers = [newViewController, searchViewController]
+    func setTabBar() {
+        tabBar.backgroundColor = .systemGroupedBackground
     }
     
-
-    weak var listener: TabBarPresentableListener?
 }
