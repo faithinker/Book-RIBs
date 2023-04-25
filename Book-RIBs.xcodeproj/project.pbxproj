@@ -36,9 +36,7 @@
 		0514A4E729ED04B700DF65B3 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4E629ED04B700DF65B3 /* String+.swift */; };
 		0514A4E929ED0FF400DF65B3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4E829ED0FF400DF65B3 /* UIView+.swift */; };
 		0514A4EC29ED1AF300DF65B3 /* NewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4EB29ED1AF300DF65B3 /* NewCell.swift */; };
-		0514A4F429ED302500DF65B3 /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4F329ED302500DF65B3 /* BookService.swift */; };
 		0514A4F729ED304600DF65B3 /* BookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4F629ED304600DF65B3 /* BookAPI.swift */; };
-		0514A4F929ED305300DF65B3 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4F829ED305300DF65B3 /* BookRepository.swift */; };
 		0514A4FE29ED309900DF65B3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4FD29ED309900DF65B3 /* Book.swift */; };
 		0514A50029ED3E6F00DF65B3 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514A4FF29ED3E6F00DF65B3 /* NetworkRepository.swift */; };
 		0514A50329ED3F1100DF65B3 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0514A50229ED3F1100DF65B3 /* CombineMoya */; };
@@ -80,9 +78,7 @@
 		0514A4E629ED04B700DF65B3 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		0514A4E829ED0FF400DF65B3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		0514A4EB29ED1AF300DF65B3 /* NewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCell.swift; sourceTree = "<group>"; };
-		0514A4F329ED302500DF65B3 /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		0514A4F629ED304600DF65B3 /* BookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPI.swift; sourceTree = "<group>"; };
-		0514A4F829ED305300DF65B3 /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		0514A4FD29ED309900DF65B3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0514A4FF29ED3E6F00DF65B3 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
 		0514A50A29ED3F6700DF65B3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -244,26 +240,8 @@
 			children = (
 				05D461A729F7C8FD00BED9B8 /* Network */,
 				0514A4F029ED2B8400DF65B3 /* Model */,
-				0514A4EF29ED2B7C00DF65B3 /* Repository */,
-				0514A4EE29ED2B7100DF65B3 /* Service */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		0514A4EE29ED2B7100DF65B3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				0514A4F329ED302500DF65B3 /* BookService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		0514A4EF29ED2B7C00DF65B3 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				0514A4F529ED303E00DF65B3 /* Book */,
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		0514A4F029ED2B8400DF65B3 /* Model */ = {
@@ -275,21 +253,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0514A4F529ED303E00DF65B3 /* Book */ = {
-			isa = PBXGroup;
-			children = (
-				0514A4F629ED304600DF65B3 /* BookAPI.swift */,
-				0514A4F829ED305300DF65B3 /* BookRepository.swift */,
-			);
-			path = Book;
-			sourceTree = "<group>";
-		};
 		05D461A729F7C8FD00BED9B8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				0514A4FF29ED3E6F00DF65B3 /* NetworkRepository.swift */,
 				0514A50A29ED3F6700DF65B3 /* Networking.swift */,
 				0514A50C29ED449300DF65B3 /* NetworkError.swift */,
+				0514A4F629ED304600DF65B3 /* BookAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -405,10 +375,8 @@
 				0514A4C829E8D94400DF65B3 /* AppComponent.swift in Sources */,
 				0514A47E29E7EDFD00DF65B3 /* AppDelegate.swift in Sources */,
 				0514A50B29ED3F6700DF65B3 /* Networking.swift in Sources */,
-				0514A4F929ED305300DF65B3 /* BookRepository.swift in Sources */,
 				0514A4B329E7F07900DF65B3 /* NewBuilder.swift in Sources */,
 				0514A48029E7EDFD00DF65B3 /* SceneDelegate.swift in Sources */,
-				0514A4F429ED302500DF65B3 /* BookService.swift in Sources */,
 				0514A4E729ED04B700DF65B3 /* String+.swift in Sources */,
 				0514A4EC29ED1AF300DF65B3 /* NewCell.swift in Sources */,
 				0514A4B429E7F07900DF65B3 /* NewInteractor.swift in Sources */,
